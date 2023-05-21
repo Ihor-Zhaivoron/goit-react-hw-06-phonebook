@@ -12,12 +12,13 @@ export const ContactsEl = () => {
   const filter = useSelector(getFilter);
 
   const filteredContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(filter.tolowerCase())
+    contact.name.toLowerCase().includes(filter.toLowerCase())
   );
 
   const deleteContact = id => {
     dispatch(removeContact(id));
   };
+
   return (
     <>
       {filteredContacts.map(contact => (

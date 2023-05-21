@@ -4,7 +4,7 @@ import { ContactForm } from '../ContactForm/ContactForm';
 export const PhoneBook = () => {
   return (
     <div className="container">
-      <h1 className={css.title}>Phone book</h1>
+      <h1 className={css.title}>Phonebook</h1>
       <ContactForm />
     </div>
   );
