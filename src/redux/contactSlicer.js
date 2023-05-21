@@ -14,6 +14,9 @@ export const contactSlicer = createSlice({
   initialState: { contacts: initialContacts },
   reducers: {
     addContact(state, { payload }) {
+      state.contacts.push(payload);
+    },
+    removeContact(state, { payload }) {
       const newContacts = state.contacts.filter(item => item.id !== payload);
       return { contacts: newContacts };
     },

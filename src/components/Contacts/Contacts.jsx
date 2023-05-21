@@ -7,6 +7,7 @@ export const Contacts = ({ children }) => {
     <div className="container">
       <h2>Contacts</h2>
       <p>Find contact by name</p>
+      {children}
       <ul className={css.list}>
         <ContactsEl />
       </ul>
