@@ -4,10 +4,10 @@ export const filterSlicer = createSlice({
   name: 'filter',
   initialState: '',
   reducers: {
-    changeFilter(action, state) {
+    changeFilter(state, action) {
       return action.payload;
     },
-    clearFilter(action, state) {
+    clearFilter(state, action) {
       return '';
     },
   },
