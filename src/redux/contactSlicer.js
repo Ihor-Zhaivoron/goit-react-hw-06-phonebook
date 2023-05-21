@@ -25,7 +25,7 @@ export const { addContact, removeContact } = contactSlicer.actions;
 // Persist
 const persistConfig = { key: 'root', storage };
 
-export const contactSlicerPersistReducer = persistReducer(
+export const contactSlicerPersistedReducer = persistReducer(
   persistConfig,
   contactSlicer.reducer
 );

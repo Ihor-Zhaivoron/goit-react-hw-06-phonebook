@@ -1,4 +1,4 @@
-import { ContactsItems } from '../ContactsItems/ContactsItems';
+import { ContactsEl } from '../ContactsEl/ContactsEl';
 
 import css from './Contacts.module.css';
 
@@ -8,7 +8,7 @@ export const Contacts = ({ children }) => {
       <h2>Contacts</h2>
       <p>Find contact by name</p>
       <ul className={css.list}>
-        <ContactsItems />
+        <ContactsEl />
       </ul>
     </div>
   );
