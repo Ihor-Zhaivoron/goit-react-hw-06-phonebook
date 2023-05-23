@@ -20,10 +20,12 @@ export const ContactForm = () => {
 
   const onSubmit = ({ name, number }) => {
     const newContact = { id: nanoid(), name, number };
-    const isNameInContacts = contacts.find(contact => contact.name === name);
+    const isNameInContacts = contacts.find(
+      contact => contact.name.toLowerCase() === name.toLowerCase()
+    );
 
     if (isNameInContacts) {
-      Notify.failure(`${name} is alredy in contacts`);
+      Notify.failure(`${name} is already in contacts`);
       return;
     }
 
